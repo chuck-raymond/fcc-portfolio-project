@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  font-family: Georgia, serif;
+  font-family: 'Hanalei', cursive;
   font-size: 2em; /* 38px / 18px = 2em */
   /* background-color: #dde0e3; Light gray For layout & troubleshooting purposes */
   color: yellow;
@@ -28,9 +28,11 @@ h1 {
 }
 
 h2 {
-  font-family: Georgia, serif;
+  font-family: 'Hanalei', cursive;
   font-size: ‭1.333333333333333‬em; /* 24px / 18px = ‭1.333333333333333‬em */
-  padding: 10% 0%; /* Vertical  Horizontal */
+  padding: 50px;
+  text-align: center;
+  /*border: 1px solid red; /* For layout & troubleshooting purposes*/
 }
 
 /* Flexible images */
@@ -50,6 +52,7 @@ img {
   /* border: 1px solid red; */ /* For layout & troubleshooting purposes*/
   padding: 50px;
   text-align: center;
+  font-style: italic;
   color: yellow;
 }
 
@@ -97,15 +100,7 @@ li a:hover {
   text-align: center;
   background-color: yellow;
   color: black;
-  /* border: 2px green solid; */
-}
-
-#contact {
-  height: 100vh;
-  text-align: center;
-  color: yellow;
-  background-color: black;
-  /* border: 2px green solid; */
+  /*border: 1px solid red; /* For layout & troubleshooting purposes*/
 }
 
 .projects-grid {
@@ -113,20 +108,52 @@ li a:hover {
   grid-template-columns: 25% 25% 25%; /*3 columns*/
   grid-template-rows: auto auto; /*2 rows*/
   grid-gap: 15px; /*space between the 6 cells*/
-  /* border: 2px green solid; */
-  padding: 0% 30%; /* Vertical  Horizontal */
+  justify-content: center;
+  margin-bottom: 50px;
+  /* border: 1px solid red; /* For layout & troubleshooting purposes*/
 }
 
-.button {
-  background-color: black;
-  color: yellow;
-  padding: 15px 32px;
+.project-tile {
+  /*border: 1px solid red; /* For layout & troubleshooting purposes*/
+}
+
+.project-tile-link {
+  color: black;
+  background-color: yellow;
+  font-weight: bold;
+  margin-top: 5px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+}
+
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: yellow;
+  background-color: black;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5d6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 0 auto;
   cursor: pointer;
+}
+
+.button:hover,
+.button:visited:hover {
+  background-color: #f5cf8e; /* Light yellow */
+}
+
+#contact {
+  height: 100vh;
+  text-align: center;
+  color: yellow;
+  background-color: black;
   /* border: 2px green solid; */
 }
 
