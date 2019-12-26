@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Hanalei+Fill&display=swap');
 
 /*  browser default font size: 1em = 16px */
+/*  body default font size is set to 18px */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +10,47 @@
 }
 
 body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+  max-width: 100%;
   color: #414141; /* Dark gray */
   background-color: #eeeeee; /* Light gray */
   font-size: 18px;
 }
 
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2em; /* 38px / 18px = 2em */
+  /* background-color: #dde0e3; Light gray For layout & troubleshooting purposes */
+  color: yellow;
+  padding: 50px;
+  text-align: center;
+  /* border: 1px solid red; */ /* For layout & troubleshooting purposes*/
+}
+
 h2 {
   font-family: Georgia, serif;
-  font-size: 1.6em; /* 24px / 16px = 1.5em */
+  font-size: ‭1.333333333333333‬em; /* 24px / 18px = ‭1.333333333333333‬em */
   padding: 10% 0%; /* Vertical  Horizontal */
+}
+
+/* Flexible images */
+/* Use width & display to make images flex to their parent’s size. */
+img {
+  display: block;
+  width: 100%;
+  /* border: 1px solid red; /* For layout & troubleshooting purposes*/
+}
+
+.welcome-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.welcome-quote {
+  /* border: 1px solid red; */ /* For layout & troubleshooting purposes*/
+  padding: 50px;
+  text-align: center;
+  color: yellow;
 }
 
 .navbar {
@@ -51,33 +85,10 @@ li a:hover {
   background-color: #111;
 }
 
-/* Flexible images */
-/* Use width & display to make images flex to their parent’s size. */
-img {
-  display: block;
-  width: 100%;
-  border: 2px black solid;
-}
-
-/* fallback settings */
-body {
-  font: normal 100% Helvetica, Arial, sans-serif;
-  max-width: 100%;
-  /* border: 2px green solid; */
-}
-
 #welcome-section {
   height: 100vh;
-  margin-top: 2.3em;
+  margin-top: 2.5em;
   background-color: black;
-  /* border: 2px green solid; */
-}
-
-h1 {
-  font-family: Georgia, serif;
-  font-size: 2em; /* 24px / 16px = 1.5em */
-  padding: 10% 50%; /* Vertical  Horizontal */
-  color: yellow;
   /* border: 2px green solid; */
 }
 
