@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill&display=swap');
+
+/*  browser default font size: 1em = 16px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #414141; /* Dark gray */
+  background-color: #eeeeee; /* Light gray */
+  font-size: 18px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.6em; /* 24px / 16px = 1.5em */
+  padding: 10% 0%; /* Vertical  Horizontal */
+}
+
+.navbar {
+  /* border: 2px green solid; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.06072874493927%;
+  background-color: #333;
+}
+
+.nav_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Flexible images */
+/* Use width & display to make images flex to their parent’s size. */
+img {
+  display: block;
+  width: 100%;
+  border: 2px black solid;
+}
+
+/* fallback settings */
+body {
+  font: normal 100% Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  /* border: 2px green solid; */
+}
+
+#welcome-section {
+  height: 100vh;
+  margin-top: 2.3em;
+  background-color: black;
+  /* border: 2px green solid; */
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 2em; /* 24px / 16px = 1.5em */
+  padding: 10% 50%; /* Vertical  Horizontal */
+  color: yellow;
+  /* border: 2px green solid; */
+}
+
+#projects {
+  height: 100vh;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  /* border: 2px green solid; */
+}
+
+#contact {
+  height: 100vh;
+  text-align: center;
+  color: yellow;
+  background-color: black;
+  /* border: 2px green solid; */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25%; /*3 columns*/
+  grid-template-rows: auto auto; /*2 rows*/
+  grid-gap: 15px; /*space between the 6 cells*/
+  /* border: 2px green solid; */
+  padding: 0% 30%; /* Vertical  Horizontal */
+}
+
+.button {
+  background-color: black;
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  /* border: 2px green solid; */
+}
+
+@media (max-width: 28.75em) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav_links {
+    margin: 0 1rem;
+  }
+}
